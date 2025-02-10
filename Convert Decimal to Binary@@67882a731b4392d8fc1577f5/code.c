@@ -1,21 +1,22 @@
 #include <stdio.h>
 
 void printBinary(int num) {
-    int mask = 1 << 31; // Start from the highest bit
-    int started = 0; // To skip leading zeros
-    
-    for (int i = 31; i >= 0; i--) {
-        if (num & mask) {
-            started = 1; // Found the first '1'
-        }
-        if (started) {
-            printf("%d", (num & mask) ? 1 : 0);
-        }
-        mask >>= 1;
+    if (num == 0) {
+        printf("0\n");
+        return;
     }
-    
-    if (!started) {
-        printf("0"); // If the number is 0, print '0'
+
+    int binary[32]; // Array to store binary digits
+    int index = 0;
+
+    while (num > 0) {
+        binary[index++] = num & 1; // Store the LSB
+        num >>= 1; // Right shift number
+    }
+
+    // Print binary in correct order
+    for (int i = index - 1; i >= 0; i--) {
+        printf("%d", binary[i]);
     }
     printf("\n");
 }
@@ -28,3 +29,4 @@ int main() {
     
     return 0;
 }
+
