@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    char word[100];  
-    scanf("%s", word);   
-    printf("You entered: %s", word); 
+    int num1, num2;
+    scanf("%d %d", &num1, &num2);  // Input two space-separated integers
+    printf("%d\n", num1 + num2);  // Print their sum
     return 0;
 }
