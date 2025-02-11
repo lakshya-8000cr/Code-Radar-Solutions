@@ -4,7 +4,7 @@ int main() {
     int num;
     
     // Taking input from the user
-    printf("Enter a number: ");
+    printf("");
     scanf("%d", &num);
     
     // Checking divisibility by both 5 and 11
