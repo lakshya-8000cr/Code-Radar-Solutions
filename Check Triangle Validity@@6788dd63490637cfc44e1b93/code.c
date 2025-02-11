@@ -13,7 +13,7 @@ int main() {
     } else if (ch >= 'a' && ch <= 'z') {
         printf("Lowercase\n");
     } else {
-        printf("valid\n");
+        printf("Valid\n");
     }
     
     return 0;
