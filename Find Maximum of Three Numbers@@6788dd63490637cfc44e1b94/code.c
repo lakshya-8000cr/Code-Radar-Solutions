@@ -4,7 +4,7 @@ int main() {
     int a, b, c;
 
     // Prompting for clarity
-    printf("Enter three numbers separated by spaces: ");
+    printf("");
     if (scanf("%d %d %d", &a, &b, &c) != 3) {
         printf("Invalid input\n");
         return 1;  // Exit if input is invalid
