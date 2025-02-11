@@ -4,7 +4,7 @@ int main() {
     int year;
     
     // Taking input from the user
-    printf("Enter a year: ");
+    printf("");
     scanf("%d", &year);
     
     // Checking if the year is a leap year
